@@ -1,7 +1,7 @@
 function searchEquipment() {
     const query = document.getElementById('searchInput').value;
 
-    fetch(`http://127.0.0.1:5000/api/search?query=${query}`)
+    fetch(`https://equipment-search-tool.onrender.com/api/search?query=${query}`)
         .then(response => response.json())
         .then(data => {
             const resultsDiv = document.getElementById('results');
